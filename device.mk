@@ -59,14 +59,14 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
-# Overlay-RRO
 PRODUCT_PACKAGES += \
-    SweetinproSettingsProvider \
-    SweetinproWifiOverlay \
-    SweetWifiOverlay
+    FrameworksResOverlay \
+    SettingsProviderM2101K6G \
+    SettingsProviderM2101K6I \
+    WifiResM2101K6G \
+    WifiResM2101K6I
 
 # Power
 PRODUCT_COPY_FILES += \
