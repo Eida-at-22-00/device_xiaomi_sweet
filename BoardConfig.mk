@@ -1,11 +1,14 @@
 #
-# Copyright (C) 2021-2024 The LineageOS Project
+# Copyright (C) 2021-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Inherit from sm6150-common
 include device/xiaomi/sm6150-common/BoardConfigCommon.mk
+
+# MiuiCamera
+include device/xiaomi/miuicamera-sweet/BoardConfig.mk
 
 DEVICE_PATH := device/xiaomi/sweet
 
