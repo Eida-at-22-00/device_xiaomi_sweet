@@ -462,6 +462,12 @@
          As of Honeycomb, blurring is not supported anymore. -->
     <bool name="config_sf_slowBlur">true</bool>
 
+    <!-- Flag indicating whether the surfaceflinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
+
     <!-- The default journal mode to use use when Write-Ahead Logging is not active.
     Choices are: OFF, DELETE, TRUNCATE, PERSIST and MEMORY.
     PERSIST may improve performance by reducing how often journal blocks are
