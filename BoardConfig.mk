@@ -25,7 +25,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 HWUI_COMPILE_FOR_PERF := true
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/sweet.config
+TARGET_KERNEL_CONFIG := sweet_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
