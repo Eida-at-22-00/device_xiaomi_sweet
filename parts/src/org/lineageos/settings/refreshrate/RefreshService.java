@@ -134,7 +134,7 @@ public class RefreshService extends Service {
     }
     
     private void setRefreshRate(String packageName) {
-        if (mRefreshUtils != null) {
+        if (mRefreshUtils != null && packageName != null) {
             mRefreshUtils.setRefreshRate(packageName);
         }
     }
