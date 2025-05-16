@@ -161,10 +161,6 @@ public final class RefreshUtils {
         }
     }
 
-    public void setDefaultRefreshRate(Context context) {
-        setDefaultRefreshRate(context);
-    }
-
     protected void setRefreshRate(String packageName) {
         if (mContext == null || packageName == null) return;
         
