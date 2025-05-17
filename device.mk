@@ -34,6 +34,7 @@ TARGET_SCREEN_HEIGHT := 2400
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
+    XiaomiParts \
     XiaomiDolby \
     XiaomiDolbyOverlay \
     DSPVolumeSynchronizer
