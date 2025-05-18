@@ -7,6 +7,17 @@ persist.vendor.audio.voicecall.speaker.stereo=true
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=true
 
+# Blur
+ro.launcher.blur.appLaunch=0
+ro.surface_flinger.supports_background_blur=0
+ro.sf.blurs_are_expensive=1
+persist.sys.sf.disable_blurs=true
+enable_blurs_on_windows=0
+disableBlurs=true
+ro.sf.blurs_are_caro=1
+ro.miui.has_real_blur=0
+persist.sys.background_blur_supported=false
+
 # Display
 debug.sf.frame_rate_multiple_threshold=120
 ro.hardware.hwcomposer=sweet
