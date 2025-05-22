@@ -21,10 +21,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.UserHandle;
+import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
 public final class ThermalUtils {
+
+    // Add to ThermalUtils.java for better logging
+    private static final boolean DEBUG = true;
+    private static final String TAG = "ThermalUtils";
 
     private static final String THERMAL_CONTROL = "thermal_control";
     private static final String THERMAL_SERVICE = "thermal_service";
@@ -179,6 +184,7 @@ public final class ThermalUtils {
      * @param mode the thermal mode int
      */
     private static void setThermalProfileMode(int mode) {
+        if (DEBUG) Log.d(TAG, "Setting thermal profile to: " + mode);
         String modeStr = String.valueOf(mode);
         // Write to sysfs to control thermal profile (this path is example)
         FileUtils.writeLine(THERMAL_SCONFIG, modeStr);
