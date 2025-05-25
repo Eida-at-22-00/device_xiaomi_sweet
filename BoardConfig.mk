@@ -45,6 +45,7 @@ TARGET_SCREEN_DENSITY := 410
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2023-11-01
+BOOT_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Inherit from proprietary files
 include vendor/xiaomi/sweet/BoardConfigVendor.mk
