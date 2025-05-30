@@ -44,8 +44,10 @@ public class RefreshTileService extends TileService {
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
-        initializeAvailableRates();
-        syncFromSettings();
+        if (context != null) {
+            initializeAvailableRates();
+            syncFromSettings();
+        }
     }
 
     private void initializeAvailableRates() {
