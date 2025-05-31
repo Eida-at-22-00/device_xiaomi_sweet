@@ -22,8 +22,6 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions"/>
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
     <application
         android:label="@string/app_title"
         android:persistent="true"
@@ -41,22 +39,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
-
-        <service
-            android:name=".doze.DozeService"
-            android:permission="XiaomiDozeService"
-            android:exported="true" />
-
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:exported="false"
-            android:theme="@style/Theme.SubSettingsBase">
-            <intent-filter>
-                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
 
         <service
             android:name=".thermal.ThermalService"

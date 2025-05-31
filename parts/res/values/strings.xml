@@ -18,14 +18,6 @@
     <!-- Xiaomi Parts -->
     <string name="app_title">Xiaomi Parts</string>
 
-    <!-- Doze settings -->
-    <string name="doze_brightness_low">Low brightness</string>
-    <string name="doze_brightness_high">High brightness</string>
-    <string name="doze_brightness_adaptive">Adaptive brightness</string>
-    <string name="doze_brightness_title">Doze brightness level</string>
-    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
-
-
     <!-- Refresh Rate Settings -->
     <string name="refresh_title">App Refresh Rate</string>
     <string name="refresh_summary">Adjust per-app maximum refresh rate</string>
